@@ -32,3 +32,16 @@
         background-color: #97c93e;
         color:white;
     }
+    #Descripcion img{
+        max-width: 100%;
+    }
+    #Descripcion{
+        background-color: #343a40;
+        color: white;
+    }
+     .card img{
+        height: 250px;
+        object-fit: cover;
+        
+        
+    }

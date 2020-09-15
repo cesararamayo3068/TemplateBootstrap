@@ -74,7 +74,7 @@
                             Desarrollo web significa construir y mantener sitios web; es el trabajo que tiene lugar en un segundo plano y que permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario. Los desarrolladores web son como duendes con poderes: nunca los ves, pero son los que hacen que todo esté bien y funcione de manera rápida y eficiente.
                         </p>
                         <a href="#" class="btn btn-outline-light">Quiero ser Desarrollador</a>
-                        <button type="button" class="btn btn-edit">Comprar cursos </button>
+                        <button type="button" class="btn btn-edit" data-toggle="modal" data-target="#modalCompra">Comprar cursos </button>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
       </div>
     </main>
     <!-- /Main -->
-    <!-- Speakers -->
+    <!-- Developers -->
     
 <section id="speakers" class="mt-4 mb-4">
 <div class="container">
@@ -97,7 +97,11 @@
             <div class="card" >
                 <img src="assets/developers/victor-robles-web.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Victor Robles</h5>
+                  <h5 class="card-title mb-0">Victor Robles</h5>
+                  <div class="badges mb-2">
+                    <span class="badge badge-warning">JavaScript</span>
+                    <span class="badge badge-info">React</span>
+                  </div>
                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti illo modi officia animi eaque aliquam magni suscipit consequuntur. Aspernatur, quia tempora magnam quo eligendi accusantium repellendus. Itaque in eligendi obcaecati?</p>
                   
                 </div>
@@ -107,7 +111,11 @@
             <div class="card" >
                 <img src="assets/developers/mark Zuckerberg.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Mark Zuckerberg</h5>
+                  <h5 class="card-title mb-0">Mark Zuckerberg</h5>
+                  <div class="badges mb-2">
+                   <span class="badge badge-danger">Angular</span>
+                    <span class="badge badge-info">React</span>
+                  </div>
                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti illo modi officia animi eaque aliquam magni suscipit consequuntur. Aspernatur, quia tempora magnam quo eligendi accusantium repellendus. Itaque in eligendi obcaecati?</p>
                   
                 </div>
@@ -117,7 +125,11 @@
             <div class="card" >
                 <img src="assets/developers/fernando_herrera.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Fernando Herrera</h5>
+                  <h5 class="card-title mb-0">Fernando Herrera</h5>
+                  <div class="badges mb-2">
+                  <span class="badge badge-danger">Angular</span>
+                  <span class="badge badge-success">Node js</span>
+                  </div>
                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti illo modi officia animi eaque aliquam magni suscipit consequuntur. Aspernatur, quia tempora magnam quo eligendi accusantium repellendus. Itaque in eligendi obcaecati?</p>
                   
                 </div>
@@ -127,7 +139,57 @@
 </div>
 
 </section>
-    <!-- /Speakers -->
+    <!-- /developers-->
+    <!-- Description -->
+    <section id="Descripcion">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pl-0 pr-0">
+          <img src="assets/developers/desa.jpg" alt="equipo de desarrolladores">
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+          <h2 class="mt-2">Nuestros Mentores </h2>
+          <p>Cada viaje es único, por lo que el núcleo de nuestro programa es la tutoría 1-1. Su mentor estará allí para brindarle información de primera mano sobre la solicitud y garantizar que obtenga apoyo personalizado en su solicitud, pruebas y entrevistas. También estarán allí para darte consejos para facilitar la transición del hogar a la universidad.</p>
+          <a class ="btn btn-outline-light"href="">Conoce mas </a>
+        </div>
+
+        </div>
+      </div>
+
+    </section>
+    
+    <!-- /Descrption -->
+    <!-- Convierte en Desarrollador -->
+    <section id="Desarrollador" class="pt-4 pb-4">
+   <div class="container">
+     <div class="row">
+       <div class="col text-uppercase text-center">
+        <small >Conviertete en  </small>
+        <h2>Desarrollador</h2>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <button type="button"class="btn btn-edit btn-block">Enviar</button>
+            </div>
+          </div>
+        </form>
+       </div>
+     </div>
+   </div>
+    </section>
+    <!-- /Convierte en Desarrollador -->
     <!-- Footer -->
      <footer id="footer" class="pb-4 pt-4">
         <div class="container">
@@ -145,12 +207,47 @@
                         <a href="">Terminos y condiciones</a>
                     </div>
                     <div class="col-12 col-lg">
-                        <a href="">Estudiantes</a>
+                        <a href="" data-toggle="modal" data-target="#modalCompra">Comprar Cursos</a>
                     </div>
             </div>
         </div>
      </footer>
     <!-- /Footer -->
+    <!-- Modal -->
+    <div class="modal fade"id="modalCompra"tabindex="-1"role="dialog"aria-labelledby="exampleModalLongTitle"aria-hidden="true">
+        <div class="modal-dialog"role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"id="exampleModalLongTitle">Comprar Cursos</h5>
+              <button type="button"class="close"data-dismiss="modal"aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form >
+                <div class="form-row">
+                  <div class="form-group col">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="alert alert-success" role="alert">
+               Recibiras un correo de confirmacíon si compras el curso
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button"class="btn btn-secondary"data-dismiss="modal">Cancelar</button>
+              <button type="button"class="btn btn-edit">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Modal -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
